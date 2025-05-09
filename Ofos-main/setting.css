@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('img/indeximg4.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh; /* Ensure body stretches to full viewport height */
+}
+
+html, body {
+    height: 100%; /* Ensure html and body take full height */
+}
+
+.container {
+    display: flex;
+    height: 100%; /* Ensure the container takes full height */
+}
+
+.sidebar {
+    width: 300px; /* Adjust width to match Restaurant Management section */
+    background-color: #1a1a1a;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Prevent the sidebar from shrinking */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out items to fill the sidebar */
+    position: relative; /* Ensure the position is relative for the logout button */
+}
+
+.sidebar-header {
+    margin-bottom: 20px;
+    position: relative; /* Ensure the position is relative for the logout button */
+}
+
+.sidebar-header h2 {
+    color: #fff;
+    font-size: 18px;
+}
+
+.logout-btn {
+    padding: 5px 10px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+    position: absolute; /* Positioning to top right corner of the sidebar */
+    top: 0;
+    right: 0;
+}
+
+.logout-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.logout-btn:hover {
+    transform: scale(1.1);
+    background-color: #e60000;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    flex-grow: 1; /* Allow the list to grow and fill available space */
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: background 0.3s, transform 0.3s, color 0.3s;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #444;
+    transform: scale(1.1);
+    color: #ffcc00;
+}
+
+.content {
+    padding: 20px;
+    width: calc(100% - 300px); /* Adjust width to account for the sidebar width */
+    background-color: rgba(255, 255, 255, 0.169);
+    border-radius: 10px;
+    overflow-y: auto; /* Allow vertical scrolling within the content area */
+}
+
+.content h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.settings, .about-contact {
+    margin-bottom: 30px;
+}
+
+.setting-item, .contact-info {
+    margin-bottom: 15px;
+}
+
+.setting-item label, .contact-info label, .content h2 {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.setting-item input, .setting-item textarea, .contact-info input {
+    width: 100%;
+    padding: 10px; /* Adjust padding for input boxes */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    color: black; /* Ensure input text color is visible */
+    background-color: rgba(255, 255, 255, 0.9); /* Ensure background color is appropriate for visibility */
+}
+
+textarea {
+    height: 100px;
+}
+
+.save-btn {
+    padding: 10px 20px;
+    background-color:#ffcc00;
+    color:black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.save-btn:hover {
+    transform: scale(1.1);
+    background-color: #ffcc00;
+}
+
+.about-contact h2, .contact-info input {
+    color: #fff; /* Ensuring white color for inputs */
+}
+
+.admin-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #171515;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.admin-button i {
+    font-size: 18px;
+}
+
+.admin-button:hover {
+    transform: scale(1.1);
+    background-color: #333;
+}

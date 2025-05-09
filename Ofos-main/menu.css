@@ -1,0 +1,241 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #464545; /* Light, neutral background */
+    color: #333; /* Darker text color for readability */
+}
+
+/* Header */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color:#ffcc00;  /* Warm orange background for header */
+    color: #333 /* White text color for contrast */
+}
+
+/* Restaurant Info - Left Side */
+.restaurant-info {
+    display: flex;
+    align-items: center;
+}
+
+.restaurant-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 5px solid #fff; /* White border around the circle */
+}
+
+.restaurant-name {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: #333; /* White text color */
+}
+
+/* Navbar - Right Side */
+.navbar {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.navbar a {
+    color:   #333;/* White color for better visibility */
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    background: none;
+}
+.navbar a:hover {
+    background-color: #ff6b6b;
+    border-radius: 5px;
+}
+
+/* Menu Title */
+.menu-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 30px 0;
+    font-family: 'Pacifico', cursive;
+    color: #ffcc00;/* Dark text for menu title */
+}
+
+/* Menu Section */
+.menu-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.food-item {
+    background-color: #fff; /* White background for food items */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.food-item:hover {
+    transform: scale(1.05);
+}
+
+.food-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.food-item h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    color:  #333 /* Warm orange color for food titles */
+}
+
+.food-item p {
+    font-family: 'Poppins', sans-serif;
+    color: #777; /* Light grey for description */
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.food-item button {
+    background-color: #ffcc00;  /* Warm orange color for the button */
+    color:  #333; /* White text color */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.food-item button:hover {
+    background-color: #ffcc00;  /* Lighter orange on hover */
+    transform: scale(1.1); /* Zoom-in effect */
+}
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    overflow-y: auto;
+}
+
+.popup.active {
+    display: block;
+    transform: translateX(0);
+}
+
+.popup-content {
+    padding: 20px;
+}
+
+.popup-content .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.popup-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.popup-content h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.popup-content p {
+    font-family: 'Poppins', sans-serif;
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.popup-content label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.popup-content .quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content .quantity-controls button {
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.popup-content .quantity-controls button:hover {
+    background-color: #ffcc00;
+}
+
+.popup-content .quantity-controls input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.popup-content button {
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.popup-content button:hover {
+   
+        background-color: #ffcc00;  /* Lighter orange on hover */
+        transform: scale(1.1); /* Zoom-in effect */
+     
+    }
+    
+

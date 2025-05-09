@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: transparent;
+}
+
+.navbar .logo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar nav ul {
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    background-color: #ff6b6b;
+    border-radius: 5px;
+}
+
+.hero {
+    background-image: url('img/indeximg4.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    font-family: 'Brush Script MT', cursive; /* Similar to the style in the image */
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-weight: 200;
+}
+
+.get-started-btn {
+    padding: 15px 30px;
+    background: #ffcc00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: #e63946;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.restaurant-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.restaurant-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Add transition for smooth zoom effect */
+}
+
+.restaurant-item:hover {
+    transform: scale(1.05); /* Zoom in on hover */
+}
+
+.restaurant-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.restaurant-item h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 15px 0;
+    font-family: 'Pacifico', cursive;
+}
+
+.restaurant-item p {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    font-family: 'Pacifico', cursive;
+}
+
+.restaurant-item button {
+    background-color:#ffcc00; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.restaurant-item button:hover {
+    background-color: #ffcc00; 
+}
+
+.rest h2 {
+    font-family: 'Pacifico', cursive;
+    padding: 20px;
+    font-size: 2rem; 
+    text-align: center;
+    margin: 30px 0;
+    color: #333; /* Dark text for menu title */
+}

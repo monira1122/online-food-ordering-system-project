@@ -1,0 +1,212 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* White background */
+    color: #333; /* Dark gray text */
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #000; /* Black title */
+}
+
+/* About Section */
+.about-section {
+    margin-bottom: 40px;
+}
+
+.about-section h1 {
+    font-size: 40px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.about-section h2 {
+    font-size: 28px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Vision & Mission Section */
+.vision-mission {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.mission, .vision {
+    flex: 1;
+    background-color: #f8f8f8; /* Light gray background for the boxes */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.mission h2, .vision h2 {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.mission p, .vision p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Team Section */
+.team {
+    margin-bottom: 40px;
+}
+
+.team h2 {
+    font-size: 28px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: transparent;
+}
+
+.navbar .logo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    background-color: #ff6b6b;
+    border-radius: 5px;
+}
+
+.hero {
+    background-image: url('img/indeximg4.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 200;
+    font-family: 'Brush Script MT', cursive; /* Similar to the style in the image */
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.get-started-btn {
+    padding: 15px 30px;
+    background: #ffcc00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: #e63946;
+}
